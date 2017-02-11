@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dayere Advertising</title>
+	<script src="dist/vendor.bundle.js"></script>
+	<style>
+		.container {
+			width: 1200px;
+		}
+
+		.circle {
+			border: 2px solid #f00400;
+			position: absolute;
+			right: 0;
+			left: 0;
+			bottom: 0;
+			top: 60px;
+			margin: auto;
+			border-radius: 100%;
+			width: 323px;
+			height: 323px;
+			text-align: center;
+			color: #250e0c;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		.logo {
+			position: absolute;
+			right: 0;
+			left: 0;
+			top: 60px;
+			bottom: 0;
+			margin: auto;
+		}
+
+		.circle.active {
+			border-color: #f00400;
+		}
+
+		.circle + .circle {
+			transform: translate(10px);
+		}
+
+		/*.circle + .circle + .circle {*/
+		/*transform : translate(10px, 10px);*/
+		/*}*/
+
+		/*.circle + .circle + .circle + .circle {*/
+		/*transform : translate(0, 10px);*/
+		/*}*/
+
+		/*.circle + .circle + .circle + .circle + .circle {*/
+		/*transform : translate(0, -10px);*/
+		/*}*/
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="circle-container">
+		<div class="circle active">
+
+		</div>
+		<div class="circle"></div>
+		<div class="circle"></div>
+		<div class="circle"></div>
+		<div class="circle"></div>
+	</div>
+</div>
+<script src="dist/app.bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+{
+   "name": "Dayere",
+   "version": "1.0.0",
+   "description": "dayere website",
+   "main": "index.js",
+   "author": "Navid Farahzadi",
+   "license": "MIT",
+   "scripts": {
+      "webpack-dev": "webpack --config webpack-dev.config.js --env=DEVELOPMENT",
+      "browserSync": "node server.js",
+      "start": "npm run browserSync | npm run webpack-dev"
+   },
+   "devDependencies": {
+      "babel-cli": "^6.22.2",
+      "babel-core": "^6.22.1",
+      "babel-loader": "^6.2.10",
+      "babel-preset-env": "^1.1.8",
+      "browser-sync": "^2.18.7",
+      "css-loader": "^0.26.1",
+      "eslint": "^3.14.1",
+      "eslint-plugin-react": "^6.9.0",
+      "extract-text-webpack-plugin": "beta",
+      "jest": "^18.1.0",
+      "node-sass": "^4.5.0",
+      "normalize.css": "^5.0.0",
+      "sass-loader": "^5.0.1",
+      "style-loader": "^0.13.1",
+      "webpack": "^2.2.1"
+   },
+   "dependencies": {
+      "foundation-sites": "^6.3.0"
+   }
+}
